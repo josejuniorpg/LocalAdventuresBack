@@ -4,7 +4,7 @@ import os
 import sys
 import environ
 
-from config.settings.base import BASE_DIR
+from LocalAdventuresBack.settings.base import BASE_DIR
 
 # Initialize the environment variables
 env = environ.Env()
@@ -13,7 +13,7 @@ environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', env.str('DJANGO_ENVIRONMENT_FILE', default='config.settings.prod'))
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', env.str('DJANGO_ENVIRONMENT_FILE', default='LocalAdventuresBack.settings.prod'))
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
