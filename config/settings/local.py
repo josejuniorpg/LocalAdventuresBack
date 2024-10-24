@@ -1,7 +1,6 @@
 # Local imports
-from base import *
+from .base import *
 
-# Initialize environment variables
 DEBUG = True
 
 # Applications from base + local
