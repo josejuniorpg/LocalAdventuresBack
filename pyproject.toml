@@ -16,6 +16,9 @@ typing-extensions = "4.12.2"
 poetry = "^1.8.4"
 
 
+[tool.poetry.group.dev.dependencies]
+isort = "^5.13.2"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
