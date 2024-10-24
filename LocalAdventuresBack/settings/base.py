@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     # Third-party apps
     'rest_framework',
     'corsheaders',
+    'drf_yasg',
 
     # Local apps
     'apps.users',
@@ -106,6 +107,8 @@ DATABASES = {
 
 # Set the custom user model for auth
 AUTH_USER_MODEL = 'users.User'
+# Default Url for login
+LOGIN_URL = '/api/users/login/'  # Cambia esta URL a la que desees usar
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
