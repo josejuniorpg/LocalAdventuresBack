@@ -13,7 +13,6 @@ import os
 from pathlib import Path
 import environ
 
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
@@ -41,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # Third-party apps
     'rest_framework',
     'corsheaders',
 ]
@@ -48,6 +49,18 @@ INSTALLED_APPS = [
 CORS_ALLOWED_ORIGINS = [
     'https://local-advetures-tec.vercel.app',
 ]
+
+CSRF_TRUSTED_ORIGINS = []
+
+# Settings for DRF
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAdminUser',  # Default permission for all DRF views
+    ],
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ],
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
