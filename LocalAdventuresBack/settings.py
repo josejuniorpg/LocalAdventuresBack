@@ -129,4 +129,4 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_DIRS = [(BASE_DIR / 'LocalAdventuresBack/static')]
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'LocalAdventuresBack/media')  # Only for development.
+MEDIA_ROOT = BASE_DIR / 'media'
