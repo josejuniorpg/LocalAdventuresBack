@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "localadventuresback"
+version = "0.1.0"
+description = "Es el back de Local Advetures"
+authors = ["JoseJunior <josejuniorpgx@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+asgiref = "3.7.2"
+django = "4.2.7"
+django-cors-headers = "4.5.0"
+djangorestframework = "3.15.2"
+sqlparse = "0.4.4"
+typing-extensions = "4.12.2"
+poetry = "^1.8.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
