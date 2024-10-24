@@ -3,6 +3,7 @@ from .base import *
 DEBUG = False
 
 ALLOWED_HOSTS = ['someting-anzudes.pythonanywhere.com']
+CSRF_TRUSTED_ORIGINS = ['someting-anzudes.pythonanywhere.com']
 
 # Database
 DATABASES = {

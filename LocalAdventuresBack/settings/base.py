@@ -46,6 +46,7 @@ INSTALLED_APPS = [
 
     # Local apps
     'apps.users',
+    'apps.invoices',
 ]
 
 CORS_ALLOWED_ORIGINS = [
