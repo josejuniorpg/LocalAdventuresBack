@@ -2,6 +2,8 @@ from .base import *
 
 DEBUG = False
 
+ALLOWED_HOSTS = ['someting-anzudes.pythonanywhere.com']
+
 # Database
 DATABASES = {
     'default': {

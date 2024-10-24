@@ -6,6 +6,8 @@ DEBUG = True
 # Applications from base + local
 INSTALLED_APPS += []
 
+#ALLOWED_HOSTS = ['127.0.0.1:8000']
+
 # Database
 DATABASES = {
     'default': {

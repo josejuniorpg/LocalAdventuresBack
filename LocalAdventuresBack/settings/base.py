@@ -29,8 +29,6 @@ SECRET_KEY = env.str('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['someting-anzudes.pythonanywhere.com']
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -106,6 +104,9 @@ DATABASES = {
     }
 }
 
+# Set the custom user model for auth
+AUTH_USER_MODEL = 'users.User'
+
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
 
@@ -143,7 +144,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # default static files settings for PythonAnywhere.
 # see https://help.pythonanywhere.com/pages/DjangoStaticFiles for more info
 STATIC_ROOT = BASE_DIR / 'staticfiles'
-STATICFILES_DIRS = [(BASE_DIR / 'LocalAdventuresBack/static')]
 STATIC_URL = 'static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
