@@ -6,7 +6,7 @@ DEBUG = True
 # Applications from base + local
 INSTALLED_APPS += []
 
-#ALLOWED_HOSTS = ['127.0.0.1:8000']
+CORS_ALLOWED_ORIGINS = ['https://local-advetures-tec.vercel.app', 'http://localhost:3000']
 
 # Database
 DATABASES = {

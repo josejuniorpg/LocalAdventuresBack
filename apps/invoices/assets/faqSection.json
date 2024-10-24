@@ -22,8 +22,10 @@
   {
     "title": "How do I send an invoice?",
     "details": [
-      "Now that youve generated your invoice, you have a couple options when it comes to sending it off to the customer: 1. Send the invoice electronically via email, website, or HubSpot. 2. Send the invoice via postal mail.",
-      "For many businesses, electronic is the preferred sending method, as it allows you to deliver invoices to a customer in real time. Use HubSpot&#39;s Commerce Hub to quickly and seamlessly send invoices to your saved customers.",
+      "Now that youve generated your invoice, you have a couple options when it comes to sending it off to the customer:",
+      "1. Send the invoice electronically via email, website, or HubSpot.",
+      "2. Send the invoice via postal mail.",
+      "For many businesses, electronic is the preferred sending method, as it allows you to deliver invoices to a customer in real time. Use HubSpot's Commerce Hub to quickly and seamlessly send invoices to your saved customers.",
       "When sending an invoice by postal mail, make sure that you consider the time it will take for your invoice to arrive. While this tends to be the slower of the two options, many businesses still send invoices via postal mail to meet the needs and demands of their specific audiences."
     ]
   },
@@ -31,7 +33,7 @@
     "title": "Where can I find sample invoices for inspiration?",
     "details": [
       "Having a well-designed, professional invoice can make a big difference in the eyes of your customer and help you get paid on time.",
-      "If you need help organizing all of the must-have information that comes on an invoice, use our tool above or download HubSpot&#39;s",
+      "If you need help organizing all of the must-have information that comes on an invoice, use our tool above or download HubSpot's",
       "free invoice templates!"
     ]
   },
