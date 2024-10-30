@@ -49,11 +49,6 @@ INSTALLED_APPS = [
     'apps.invoices',
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    'https://local-advetures-tec.vercel.app',
-]
-
-CSRF_TRUSTED_ORIGINS = []
 
 # Settings for DRF
 REST_FRAMEWORK = {
@@ -66,9 +61,9 @@ REST_FRAMEWORK = {
 }
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
